@@ -5,28 +5,12 @@ import Table from 'react-bootstrap/Table'
 import './user-table-styles.sass'
 import {proxy} from '../../conf'
 
-
 class UserList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      firstName: '',
-      lastName: '',
-      phoneNo: '',
-      email: '',
-      nic: '',
-      users: []
+      users: this.props.data
     }
-  }
-
-  componentDidMount() {
-    axios.get(`${proxy}user`).then(res => {
-      this.setState({
-        users: res.data
-      })
-    }).catch(error => {
-      console.log(error)
-    })
   }
 
   deleteUser = id => {
@@ -41,6 +25,12 @@ class UserList extends Component {
   }
 
   render() {
+    const {
+      userId,
+      updateUser,
+      removeUser
+    } = this.props
+
     return (
       <div>
         <Table responsive striped bordered hover variant='dark'>
@@ -60,17 +50,17 @@ class UserList extends Component {
           {
             this.state.users.map(user => (
               <tr key={user._id}>
-                <td/>
+                <td>{user.id}</td>
                 <td>{user.firstName}</td>
                 <td>{user.lastName}</td>
                 <td>{user.phoneNo}</td>
                 <td>{user.email}</td>
                 <td>{user.nic}</td>
                 <td>
-                  <Button variant={'primary'} href={'/editUser/' + user._id}>Edit</Button>
+                  <Button variant={'primary'} href={updateUser}>Edit</Button>
                 </td>
                 <td>
-                  <Button variant={'danger'} onClick={() => this.deleteUser(user._id)}>Delete</Button>
+                  <Button variant={'danger'} onClick={removeUser}>Delete</Button>
                 </td>
               </tr>
             ))
