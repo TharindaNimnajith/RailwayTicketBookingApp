@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="SLIIT_Y3S1_AF_Project_Express_Backend" />
+    <orderEntry type="module" module-name="SLIIT_Y3S1_AF_Project_React_Frontend" />
+    <orderEntry type="module" module-name="final_project" />
+    <orderEntry type="module" module-name="af_project" />
+    <orderEntry type="module" module-name="sample" />
+    <orderEntry type="module" module-name="ashihara_karate-master" />
+    <orderEntry type="module" module-name="covid-19-tracker-master" />
+    <orderEntry type="module" module-name="CSSE_Ticket_booking-master" />
+    <orderEntry type="module" module-name="gihan" />
+    <orderEntry type="module" module-name="mern-exercise-tracker-mongodb-master" />
+    <orderEntry type="module" module-name="ReactCRUDExample-master" />
+    <orderEntry type="module" module-name="ReactExpressCRUD-master" />
+    <orderEntry type="module" module-name="reactjs-tutorial-master" />
+    <orderEntry type="module" module-name="React-Semantic-UI-Sortable-Table-Example-master" />
+    <orderEntry type="module" module-name="todo-list-react-app-it18149654" />
+    <orderEntry type="module" module-name="Train-ticket-booking" />
+    <orderEntry type="module" module-name="Travel-Hub-React-master" />
+    <orderEntry type="module" module-name="volunteer_proj_test-master" />
+    <orderEntry type="module" module-name="OnlineFashionStore-master" />
+    <orderEntry type="module" module-name="IT18149654" />
+  </component>
+</module>
